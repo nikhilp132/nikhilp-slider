@@ -1,13 +1,24 @@
 console.log('hello!');
 
-function nextSlide() {
-  var slideWidth = $('.slide1').width();
+var slideWidth = $('.innerSlides').width();
+var containerWidth = $('.slideContainer').width();
+var sliderPos = 0;
 
-  $('.slideContainer').animate({ left: '-200px' });
+function nextSlide() {
+  if (sliderPos != slideWidth - containerWidth) {
+    sliderPos -= slideWidth;
+  }
+  console.log(sliderPos);
+
+  $('.slideContainer').animate({ left: sliderPos });
 }
 
 function prevSlide() {
-  var slideWidth = $('.slide1').width();
+  if (sliderPos != 0) {
+    sliderPos += slideWidth;
+  }
 
-  $('.slideContainer').animate({ left: '0px' });
+  console.log(sliderPos);
+
+  $('.slideContainer').animate({ left: sliderPos });
 }

@@ -12,27 +12,28 @@ body {
 .slideContainer {
   position: relative;
   height: 100%;
-  width: 600px;
+  width: 800px;
   left: 0px;
 }
 
 .slide1 {
-  float: left;
   background-color: red;
-  width: 200px;
-  height: 100%;
 }
 
 .slide2 {
-  float: left;
   background-color: blue;
-  width: 200px;
-  height: 100%;
 }
 
 .slide3 {
-  float: left;
   background-color: green;
+}
+
+.slide4 {
+  background-color: yellow;
+}
+
+.innerSlides {
+  float: left;
   width: 200px;
   height: 100%;
 }

@@ -1,22 +1,28 @@
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <script src="script.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  </head>
 
-  <body>
-    <h1>Hello there!</h1>
-    <div class="mainFrame">
-      <div class="slideContainer">
-        <div class="slide1">1</div>
-        <div class="slide2">2</div>
-        <div class="slide3">3</div>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+
+</head>
+
+<body>
+  <h1>Hello there!</h1>
+  <div class="mainFrame">
+    <div class="slideContainer">
+      <div class="slide1 innerSlides">1</div>
+      <div class="slide2 innerSlides">2</div>
+      <div class="slide3 innerSlides">3</div>
+      <div class="slide4 innerSlides">4</div>
     </div>
-    <br />
-    <button id="prev" onclick="prevSlide()">Prev</button>
-    <button id="next" onclick="nextSlide()">Next</button>
-  </body>
+  </div>
+  <br />
+  <button id="prev" onclick="prevSlide()">Prev</button>
+  <button id="next" onclick="nextSlide()">Next</button>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="script.js"></script>
+
 </html>
