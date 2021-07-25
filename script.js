@@ -4,6 +4,7 @@ var slideWidth = $('.innerSlides').width();
 var containerWidth = $('.slideContainer').width();
 var sliderPos = 0;
 
+$('.slideContainer').css('width', '1000px');
 function nextSlide() {
   if (sliderPos != slideWidth - containerWidth) {
     sliderPos -= slideWidth;
